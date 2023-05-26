@@ -16,7 +16,7 @@ def execute_pg_isready(port):
     return result.stdout.strip()
 
 if __name__ == '__main__':
-    csv_file = open('liveness.csv', 'w', newline='')
+    csv_file = open('out/liveness.csv', 'w', newline='')
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['Times'] + instances)
 

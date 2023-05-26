@@ -127,7 +127,7 @@ def write_random_rows(csv_writer):
 if __name__ == '__main__':
     executor = ThreadPoolExecutor(max_workers=8)
 
-    csv_file = open('execution_write_times.csv', 'w', newline='')
+    csv_file = open('out/execution_write_times.csv', 'w', newline='')
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(['Query', 'Execution Time (ms)'])
     for i in range(1,8):
